@@ -22,12 +22,23 @@ namespace Exercicio_8
             if ((ladoA < ladoB + ladoC) && (ladoB < ladoA + ladoC) && (ladoC < ladoA + ladoC))
             {
                 Console.WriteLine("os valores informados formam um triangulo");
+                if ((ladoA == ladoB) && (ladoB == ladoC))
+                {
+                    Console.WriteLine("E ele é um triangulo equilatero");
+            
+                }
+                else if ((ladoA == ladoB) || (ladoA== ladoC) || (ladoB == ladoC))
+                {
+                    Console.WriteLine("e ele é um Triangulo Isósceles.");
+                }
             }
 
             else
             {
-                Console.WriteLine("Os valores não formam um triangulo.");
+                Console.WriteLine("e ele é um triangulo escaleno.");
             }
+
+
 
              
 
