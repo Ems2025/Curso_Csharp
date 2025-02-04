@@ -21,9 +21,16 @@
         }
 
         static void Contador(int inicio, int fim, int passo)
+           
         {
+            if (passo <0)
+            {
+                passo = -passo; 
+            }
+
             Escrever($"Contagem de {inicio} até {fim} de {passo} em {passo}");
             Thread.Sleep(2000);
+            
 
             if (inicio < fim)
             {
@@ -31,7 +38,7 @@
                 while (cont <= fim)
 
                 {
-                    Console.Write($" {cont} ");  // conatgem progressiva  (> soma + )
+                    Console.Write($" {cont} ");  // contagem progressiva  (> soma + )
                     Thread.Sleep(500);
                      cont+= passo;
 
